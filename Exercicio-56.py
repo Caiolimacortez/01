@@ -1,9 +1,5 @@
 from time import sleep
-import sys
 import os
-def restart_program():
-    python = sys.executable
-    os.execl(python, python, * sys.argv)
 
 Mulheres = 0
 Idade_1 = 0
@@ -14,57 +10,78 @@ Idade_4 = 0
 
 print('-='* 20)
 Nome1 = str(input('Digite o Seu Nome: '))
+
+
 Idade1 = int(input('Digite a Sua Idade: '))
-Sexo1 = str(input('Digite o Seu Sexo [M/F]: '))
 
-Sexo1 = Sexo1.upper()
-Sexo1 = Sexo1.strip()
+while True:
+  Sexo1 = str(input('Digite o Seu Sexo [M/F]: '))
 
-if Sexo1 != ('M') and  Sexo1 != ('F'):
-  print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
-  print('Digite - M - Para Masculino é - F - Para Feminino')
-  sleep(1)
-  restart_program()
+  Sexo1 = Sexo1.upper()
+  Sexo1 = Sexo1.strip()
+
+  if Sexo1 != ('M') and  Sexo1 != ('F'):
+    print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
+    print('Digite - M - Para Masculino é - F - Para Feminino')
+    sleep(0.3)
+    os.system('cls' if os.name == 'nt' else 'clear')
+  else:
+    break
 
 print('-='* 20)
 
 Nome2 = str(input('Digite o Seu Nome: '))
 Idade2 = int(input('Digite a Sua Idade: '))
-Sexo2 = str(input('Digite o Seu Sexo [M/F]: '))
+while True:
+  Sexo2 = str(input('Digite o Seu Sexo [M/F]: '))
 
-Sexo2 = Sexo1.upper()
-Sexo2 = Sexo1.strip()
+  Sexo2 = Sexo2.upper()
+  Sexo2 = Sexo2.strip()
 
-if Sexo2 != ('M') and  Sexo2 != ('F'):
-  print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
-  print('Digite - M - Para Masculino é - F - Para Feminino')
-  sleep(1)
+  if Sexo2 != ('M') and  Sexo2 != ('F'):
+    print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
+    print('Digite - M - Para Masculino é - F - Para Feminino')
+    sleep(0.3)
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+  else:
+    break
 
 print('-='* 20)
 Nome3 = str(input('Digite o Seu Nome: '))
 Idade3 = int(input('Digite a Sua Idade: '))
-Sexo3 = str(input('Digite o Seu Sexo [M/F]: '))
+while True:
+  Sexo3 = str(input('Digite o Seu Sexo [M/F]: '))
 
-Sexo3 = Sexo1.upper()
-Sexo3 = Sexo1.strip()
+  Sexo3 = Sexo1.upper()
+  Sexo3 = Sexo1.strip()
 
-if Sexo3 != ('M') and  Sexo3 != ('F'):
-  print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
-  print('Digite - M - Para Masculino é - F - Para Feminino')
-  sleep(1)
+  if Sexo3 != ('M') and  Sexo3 != ('F'):
+      print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
+      print('Digite - M - Para Masculino é - F - Para Feminino')
+      sleep(0.3)
+      os.system('cls' if os.name == 'nt' else 'clear')
+
+  else:
+    break
 
 print('-='* 20)
 Nome4 = str(input('Digite o Seu Nome: '))
 Idade4 = int(input('Digite a Sua Idade: '))
-Sexo4 = str(input('Digite o Seu Sexo [M/F]: '))
+while True:
+  Sexo4 = str(input('Digite o Seu Sexo [M/F]: '))
 
-Sexo4 = Sexo1.upper()
-Sexo4 = Sexo1.strip()
+  Sexo4 = Sexo1.upper()
+  Sexo4 = Sexo1.strip()
 
-if Sexo4 != ('M') and  Sexo4 != ('F'):
-  print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
-  print('Digite - M - Para Masculino é - F - Para Feminino')
-  sleep(1)
+  if Sexo4 != ('M') and  Sexo4 != ('F'):
+      print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
+      print('Digite - M - Para Masculino é - F - Para Feminino')
+      sleep(0.3)
+      os.system('cls' if os.name == 'nt' else 'clear')
+
+  else:
+    break
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 if  Sexo1 == ('F'):
