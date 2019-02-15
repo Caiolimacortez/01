@@ -1,9 +1,5 @@
 from time import sleep
-import sys
 import os
-def restart_program():
-    python = sys.executable
-    os.execl(python, python, * sys.argv)
 
 Mulheres: int = 0
 IdadeTotalMedia = 0
@@ -11,7 +7,6 @@ Homem = 0
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 print('-='* 20)
 Nome1 = str(input('Digite o Seu Nome: '))
-<<<<<<< HEAD
 
 def AntiErro1():
   Idade1 = input('Digite a Sua Idade: ')
@@ -25,19 +20,20 @@ def AntiErro1():
 Idade1 = (AntiErro1())
 
 #print("Idade1 [{}]".format(Idade1))
-=======
-Idade1 = int(input('Digite a Sua Idade: '))
-Sexo1 = str(input('Digite o Seu Sexo [M/F]: '))
->>>>>>> parent of b46cada... Melhorias
 
-Sexo1 = Sexo1.upper()
-Sexo1 = Sexo1.strip()
+while True:
+  Sexo1 = str(input('Digite o Seu Sexo [M/F]: '))
 
-if Sexo1 != ('M') and  Sexo1 != ('F'):
-  print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
-  print('Digite - M - Para Masculino é - F - Para Feminino')
-  sleep(1)
-  restart_program()
+  Sexo1 = Sexo1.upper()
+  Sexo1 = Sexo1.strip()
+
+  if Sexo1 != ('M') and  Sexo1 != ('F'):
+    print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
+    print('Digite - M - Para Masculino é - F - Para Feminino')
+    sleep(0.3)
+    #os.system('cls' if os.name == 'nt' else 'clear')
+  else:
+    break
 
 if Sexo1 == ('M'):
   Maisvelho = Idade1
@@ -49,7 +45,6 @@ elif Idade1 <= 20:
 print('-='* 20)
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Nome2 = str(input('Digite o Seu Nome: '))
-<<<<<<< HEAD
 
 def AntiErro2():
   Idade2 = input('Digite a Sua Idade: ')
@@ -64,29 +59,18 @@ Idade2 = (AntiErro2())
 
 while True:
   Sexo2 = str(input('Digite o Seu Sexo [M/F]: '))
-=======
-Idade2 = int(input('Digite a Sua Idade: '))
-Sexo2 = str(input('Digite o Seu Sexo [M/F]: '))
->>>>>>> parent of b46cada... Melhorias
 
-Sexo2 = Sexo1.upper()
-Sexo2 = Sexo1.strip()
+  Sexo2 = Sexo2.upper()
+  Sexo2 = Sexo2.strip()
 
-<<<<<<< HEAD
   if Sexo2 != ('M') and  Sexo2 != ('F'):
     print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo2))
     print('Digite - M - Para Masculino é - F - Para Feminino')
     sleep(0.3)
-    os.system('cls' if os.name == 'nt' else 'clear')
+    #os.system('cls' if os.name == 'nt' else 'clear')
 
   else:
     break
-=======
-if Sexo2 != ('M') and  Sexo2 != ('F'):
-  print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
-  print('Digite - M - Para Masculino é - F - Para Feminino')
-  sleep(1)
->>>>>>> parent of b46cada... Melhorias
 
 if Sexo2 == ('M'):
   if Idade2 >= Idade1:
@@ -99,7 +83,6 @@ elif Idade2 <= 20:
 print('-='* 20)
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Nome3 = str(input('Digite o Seu Nome: '))
-<<<<<<< HEAD
 
 def AntiErro3():
   Idade3 = input('Digite a Sua Idade: ')
@@ -122,19 +105,10 @@ while True:
       print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo3))
       print('Digite - M - Para Masculino é - F - Para Feminino')
       sleep(0.3)
-      os.system('cls' if os.name == 'nt' else 'clear')
-=======
-Idade3 = int(input('Digite a Sua Idade: '))
-Sexo3 = str(input('Digite o Seu Sexo [M/F]: '))
+      #os.system('cls' if os.name == 'nt' else 'clear')
 
-Sexo3 = Sexo1.upper()
-Sexo3 = Sexo1.strip()
->>>>>>> parent of b46cada... Melhorias
-
-if Sexo3 != ('M') and  Sexo3 != ('F'):
-  print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
-  print('Digite - M - Para Masculino é - F - Para Feminino')
-  sleep(1)
+  else:
+    break
 
 if Sexo3 == ('M'):
   Maisvelho = Idade3
@@ -146,7 +120,6 @@ elif Idade3 <= 20:
 print('-='* 20)
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Nome4 = str(input('Digite o Seu Nome: '))
-<<<<<<< HEAD
 
 def AntiErro4():
   Idade4 = input('Digite a Sua Idade: ')
@@ -169,19 +142,10 @@ while True:
       print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo4))
       print('Digite - M - Para Masculino é - F - Para Feminino')
       sleep(0.3)
-      os.system('cls' if os.name == 'nt' else 'clear')
-=======
-Idade4 = int(input('Digite a Sua Idade: '))
-Sexo4 = str(input('Digite o Seu Sexo [M/F]: '))
+      #os.system('cls' if os.name == 'nt' else 'clear')
 
-Sexo4 = Sexo1.upper()
-Sexo4 = Sexo1.strip()
->>>>>>> parent of b46cada... Melhorias
-
-if Sexo4 != ('M') and  Sexo4 != ('F'):
-  print('\nOpção Inválida Voçê Digitou = {}'.format(Sexo1))
-  print('Digite - M - Para Masculino é - F - Para Feminino')
-  sleep(1)
+  else:
+    break
 
 if Sexo4 == ('M') and Maisvelho <= Idade4:
   Maisvelho = Idade4
